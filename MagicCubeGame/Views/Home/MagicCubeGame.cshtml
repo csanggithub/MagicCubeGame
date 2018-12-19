@@ -1,0 +1,58 @@
+﻿
+@{
+    ViewBag.Title = "MagicCubeGame";
+}
+<link rel="stylesheet" type="text/css" href="~/css/cube.css">
+<link rel="stylesheet" type="text/css" href="~/css/doodle2.css">
+<link rel="stylesheet" type="text/css" href="~/css/certificate2.css">
+
+<script charset="utf-8" src="~/js/tween.r12.js"></script>
+<script charset="utf-8" src="~/js/three.js"></script>
+<script charset="utf-8" src="~/js/cuber.min.js"></script>
+
+<div class="col-md-12" style="height:750px">
+    <div id="bg"></div>
+    <div id="container"></div>
+    <div id="fail">
+        <img src="img/static-cube.png" />
+        <div id="upgradeText" class="bubble fadeTransition">
+            <span class="pointerleft SPRITE_carrot_down_2x"></span>
+        </div>
+    </div>
+    <div id="uipanel" class="fadeTransition" style="display:none;">
+        <div id="movecounter">0</div>
+        <div id="buttonpanel">
+            <div id="sharebubble" class="fadeTransition" style="opacity:0">
+                <input id="shareshortlink" type="text" value="google.com/doodles" readonly />
+                <div id="sharegplus" class="bubbleicon SPRITE_google_plus_64_2x"></div>
+                <div id="sharefacebook" class="bubbleicon SPRITE_facebook_64_2x"></div>
+                <div id="sharetwitter" class="bubbleicon SPRITE_twitter_64_2x"></div>
+                <div id="shareemail" class="bubbleicon SPRITE_email_64_2x"></div>
+            </div>
+            <div id="uibuttons">
+                <div id="sharebutton" class="bubbleicon SPRITE_share_64_2x"></div>
+                <div id="helpbutton" class="bubbleicon SPRITE_help_64_2x"></div>
+                <div id="searchbutton" class="bubbleicon SPRITE_search_64_2x"></div>
+            </div>
+        </div>
+        <div id="helpbubble" class="bubble" style="display:none">
+            <span class="pointerup SPRITE_carrot_grey_up_2x"></span>
+            <div id="helpimage" class="one"></div>
+            <div id="helptext" class="helptext"></div>
+            <div id="helpnext" class="helptext"></div>
+            <span class="pointerdown SPRITE_carrot_down_2x"></span><br>
+        </div>
+    </div>
+</div>
+
+<script charset="utf-8" src="~/js/iecss3d.js"></script>
+<script charset="utf-8" src="~/js/ierenderer.js"></script>
+<script charset="utf-8" src="~/js/deviceMotion.js"></script>
+<script charset="utf-8" src="~/js/locked.js"></script>
+
+<script charset="utf-8" src="~/js/textBox.js"></script>
+<script charset="utf-8" src="~/js/ResizeableTextBox.3.js"></script>
+<script charset="utf-8" src="~/js/divBox.js"></script>
+<script charset="utf-8" src="~/js/frames.js"></script>
+<script charset="utf-8" src="~/js/certificate.js"></script>
+<script charset="utf-8" src="~/js/main3.js"></script>
